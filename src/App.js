@@ -4,6 +4,7 @@ import $ from 'jquery'
 import { fx } from 'money'
 import CurrencyCardContainer from './containers/CurrencyCardContainer'
 import UomCardContainer from './containers/UomCardContainer'
+import WeightCardContainer from './containers/WeightCardContainer'
 import './App.css';
 import ErrorBoundary from './ErrorBoundary'
 
@@ -33,6 +34,9 @@ class App extends React.Component {
           </div>
           <div className='col'>
             <UomCardContainer appState={appState} />
+          </div>
+          <div className='col'>
+            <WeightCardContainer appState={appState} />
           </div>
         </div>
       </div>

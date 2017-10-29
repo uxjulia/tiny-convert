@@ -6,7 +6,7 @@ const UomCardContainer = ({appState: {uomState}}) => {
   return (
     <div className='card'>
       <div className='card-body'>
-        <div className='text-center'><i className='fa fa-balance-scale fa-3x text-info' /></div>
+        <div className='text-center form-group'><i className='fa fa-exchange fa-3x text-info' /></div>
         <UomInputForm appState={uomState} />
         <UomDisplay appState={uomState} />
       </div>

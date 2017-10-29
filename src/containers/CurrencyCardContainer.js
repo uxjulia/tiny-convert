@@ -8,7 +8,7 @@ const CurrencyCardContainer = ({appState: {currencyState}}) => {
   return (
     <div className='card'>
       <div className='card-body'>
-        <div className='text-center'><i className='fa fa-money fa-3x text-success' /></div>
+        <div className='text-center form-group'><i className='fa fa-money fa-3x text-success' /></div>
         <ErrorBoundary>
           <CurrencyInputForm appState={currencyState} />
         </ErrorBoundary>
