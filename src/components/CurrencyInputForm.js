@@ -13,9 +13,9 @@ const CurrencyInputForm = ({appState: {symbol, value, setValue, handleSelect}}) 
             <span className='sr-only'>Toggle Dropdown</span>
           </button>
           <div className='dropdown-menu'>
-            <a className='dropdown-item' id='USD' value='USD' onClick={handleSelect}>USD ($)</a>
-            <a className='dropdown-item' id='GBP' value='GBP' onClick={handleSelect}>GBP (&pound;)</a>
-            <a className='dropdown-item' id='EUR' value='EUR' onClick={handleSelect}>EURO (&euro;)</a>
+            <a className='dropdown-item' id='USD' name='USD' onClick={handleSelect}>USD ($)</a>
+            <a className='dropdown-item' id='GBP' name='GBP' onClick={handleSelect}>GBP (&pound;)</a>
+            <a className='dropdown-item' id='EUR' name='EUR' onClick={handleSelect}>EURO (&euro;)</a>
           </div>
         </div>
         <input className='form-control' id='input' onChange={setValue} placeholder="0.00" value={value} />
