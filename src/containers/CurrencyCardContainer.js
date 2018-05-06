@@ -1,7 +1,6 @@
 import React from 'react'
 import { observer } from 'mobx-react'
-import CurrencyInputForm from '../components/CurrencyInputForm'
-import CurrencyDisplay from '../components/CurrencyDisplay'
+import Currency from '../components/Currency'
 import ErrorBoundary from '../ErrorBoundary'
 
 const CurrencyCardContainer = ({appState: {currencyState}}) => {
@@ -10,10 +9,10 @@ const CurrencyCardContainer = ({appState: {currencyState}}) => {
       <div className='card-body'>
         <div className='text-center form-group'><i className='fa fa-money fa-3x text-success' /></div>
         <ErrorBoundary>
-          <CurrencyInputForm appState={currencyState} />
+          <Currency.InputForm appState={currencyState} />
         </ErrorBoundary>
         <ErrorBoundary>
-          <CurrencyDisplay appState={currencyState} />
+          <Currency.Display appState={currencyState} />
         </ErrorBoundary>
       </div>
     </div>

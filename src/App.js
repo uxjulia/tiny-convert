@@ -3,7 +3,7 @@ import { observer } from 'mobx-react'
 import $ from 'jquery'
 import { fx } from 'money'
 import CurrencyCardContainer from './containers/CurrencyCardContainer'
-import UomCardContainer from './containers/UomCardContainer'
+import LengthCardContainer from './containers/LengthCardContainer'
 import WeightCardContainer from './containers/WeightCardContainer'
 import './App.css';
 import ErrorBoundary from './ErrorBoundary'
@@ -33,7 +33,7 @@ class App extends React.Component {
             </ErrorBoundary>
           </div>
           <div className='col'>
-            <UomCardContainer appState={appState} />
+            <LengthCardContainer appState={appState} />
           </div>
           <div className='col'>
             <WeightCardContainer appState={appState} />

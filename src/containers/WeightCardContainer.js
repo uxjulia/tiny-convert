@@ -1,6 +1,5 @@
 import React from 'react'
-import WeightInputForm from '../components/WeightInputForm'
-import WeightDisplay from '../components/WeightDisplay'
+import Weight from '../components/Weight/'
 
 const WeightCardContainer = ({appState: {weightState}}) => {
   return (
@@ -10,8 +9,8 @@ const WeightCardContainer = ({appState: {weightState}}) => {
           <i className='fa fa-balance-scale fa-3x text-warning' />
         </div>
         <div>
-          <WeightInputForm appState={weightState} />
-          <WeightDisplay appState={weightState} />
+          <Weight.InputForm appState={weightState} />
+          <Weight.Display appState={weightState} />
         </div>
       </div>
     </div>
